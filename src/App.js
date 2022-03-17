@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 
 function Clock() {
+  const myName = "Victor";
   const [date, setDate] = useState(new Date());
 
   function tick() {
@@ -18,6 +19,7 @@ function Clock() {
   return (
     <div>
       <h1>Hello, world!</h1>
+      <h2>My name is {myName}</h2>
       <h2>It is {date.toLocaleTimeString()}.</h2>
       <a href="https://google.com">Google</a>
     </div>
